@@ -10,21 +10,16 @@ public class boxController : MonoBehaviour {
 	Rigidbody2D ball; //RB2 do Corpo com Script.
 	public MeshRenderer player; //Material Inicial do Player.
 
-
 	[Header("Funçoes pra verificar o chão")]
 	public bool TaNoChao; //Condição de verdadeiro ou falso.
 	public Transform Detectachao; //Esse é o gameobject vazio ou seja o Overlapse.Circle cujo raio será usado pra detectar objectos com layer chão.
 	public LayerMask WhatIsGround; //Ativar a procura de LayerMask no Player,qual objecto está com LayerMask que estamos procurando?Nesse caso o chão.
 	public float raio; //Raio de colisão entre Overlapse.Circle e LayerMask.
 
-
 	[Header("Componentes de Material pra objectos na cena")]
 	public MeshRenderer anotherMat; //Material que será atribuido ao Player mundando a sua cor.
 	public MeshRenderer playerMat; //Material que fará retornar a cor do Player.
 	public MeshRenderer portalMat; //Material do Portal que será atribuido ao Player quando colidir com o mesmo.
-
-
-
 
 	// Use this for initialization
 	void Start () {
@@ -101,7 +96,6 @@ public class boxController : MonoBehaviour {
 		case "portalMat":
 			player.material = portalMat.material;
 			break;
-
 		}
 	}
 }

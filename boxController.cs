@@ -56,7 +56,7 @@ public class boxController : MonoBehaviour {
 		}
 
 	}
-
+	
 	//Se o Player Collider com uma ball ele recebe outro material mudando de cor nesse caso o material da com cor verde.
 	void OnCollisionStay2D(Collision2D materials)
 	{
